@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<section class="hero is-dark">
+        
+    <title>Mental Health Questionaire</title>
+
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mental Health Resource Guide</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script>
+    var general = 0;
+    var anxiety = 0;
+    var bp = 0;
+    var bodydys = 0;
+    var depression = 0;
+    var eatdiso = 0;
+    var ocd = 0;
+    var panic = 0;
+    var phobia = 0;
+    var schizo = 0;
+    var sui = 0;
+    function upGeneral() {
+        general = general + 1;
+    }
+    function upAnxiety() {
+        anxiety = anxiety + 1;
+        if (anxiety > 2){
+            if (general > 2){
+                document.getElementById("anxiety1").innerHTML = "Anxiety";
+            }
+        }
+    }
+    function upBp() {
+        bp = bp + 1;
+        if (bp > 2){
+            if (general > 2){
+                document.getElementById("bp1").innerHTML = "Bipolar Disorder";
+            }
+        }
+    }
+    function upBodydys() {
+        bodydys = bodydys + 1;
+        if (bodydys > 2){
+            if (general > 2){
+                document.getElementById("bodydys1").innerHTML = "Body Dysmorphic Disorder";
+            }
+        }
+    }
+    function upDepression() {
+        depression = depression + 1;
+        if (depression > 2){
+            if (general > 2){
+                document.getElementById("depression1").innerHTML = "Depression";
+            }
+        }
+    }
+    function upEatdiso() {
+        eatdiso = eatdiso + 1;
+        if (eatdiso > 2){
+            if (general > 2){
+                document.getElementById("eatdiso1").innerHTML = "Eating Disorder";
+            }
+        }
+    }
+    function upOcd() {
+        ocd = ocd + 1;
+        if (ocd > 2){
+            if (general > 2){
+                document.getElementById("ocd1").innerHTML = "Obsessive Compulsive Disroder";
+            }
+        }
+    }
+    function upPanic() {
+        panic = panic + 1;
+        if (panic > 2){
+            if (general > 2){
+                document.getElementById("panic1").innerHTML = "Panic Disorder";
+            }
+        }
+    }
+    function upPhobia() {
+        phobia = phobia + 1;
+        if (phobia > 2){
+            if (general > 2){
+                document.getElementById("phobia1").innerHTML = "Phobia Disorder";
+            }
+        }
+    }
+    function upSchizo() {
+        schizo = schizo + 1;
+        if (schizo > 2){
+            if (general > 2){
+                document.getElementById("schizo1").innerHTML = "Schizophrenia";
+            }
+        }
+    }
+    function upSui() {
+        sui = sui + 1;
+        if (sui > 2){
+            if (general > 2){
+                document.getElementById("sui1").innerHTML = "Suicidal Thoughts";
+            }
+        }
+    }
+    
+    </script>
+        <Style>
+                    h1 {text-align: center;}
+                    h2 {text-align: center;}
+            </Style>
+    </head>
+    <br>
+    <style>
+            .dropbtn {
+        background-color: gray;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #999;}
+    </style>
+    <div class = "dropdown"> 
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="./index.html">Front Page</a>
+                <a href="./anxiety.html">Resources for Anxiety</a>
+                <a href="./depression.html">Resources for Depression</a>
+                <a href="./stress.html">Resources for Stress</a>
+                <a href="./AboutUs.html">About Me</a>
+            </div>
+    </div>
+    
+    <br>
+    
+    <h1 class="title">Mental Health Questionnaire</h1>
+    <h2 class="subtitle">Answer the questions below regarding your feelings over the past 2 weeks.</h2>
+    <body>
+    <br><br><br>
+    
+    <br>
+    <br>
+    <br>
+</section>
+
+
+<section class="hero is-dark">
+    <div class="container">
+        <div class="content">
+            <p> Do you usually get less than 7 hours of sleep per night? </p>
+    <input type="radio" name="general.one" value="yes"> Yes<br>
+    <input type="radio" name="general.one" value="no"> No<br>
+    <br>
+    <p> Do you ever not know why you&#8217;re feeling the way you feel? </p>
+    <input type="radio" name="general.two" value="yes"> Yes<br>
+    <input type="radio" name="general.two" value="no"> No<br>
+    <br>
+    <p> Do you ever feel disconnected from what&#8217;s around you? </p>
+    <input type="radio" name="general.three" value="yes"> Yes<br>
+    <input type="radio" name="general.three" value="no"> No<br>
+    <br>
+    <p> Has your work-ethic notably declined recently? </p>
+    <input type="radio" name="general.four" value="yes"> Yes<br>
+    <input type="radio" name="general.four" value="no"> No<br>
+    <br>
+    <p> Is concentrating harder for you now than it used to be? </p>
+    <input type="radio" name="general.five" value="yes"> Yes<br>
+    <input type="radio" name="general.five" value="no"> No<br>
+    <br>
+    <p> Do you frequently feel restless and nervous? </p>
+    <input type="radio" name="anxiety.one" value="yes"> Yes<br>
+    <input type="radio" name="anxiety.one" value="no"> No<br>
+    <br>
+    <p> Do you frequently feel so worried that it makes it difficult to concentrate? </p>
+    <input type="radio" name="anxiety.two" value="yes"> Yes<br>
+    <input type="radio" name="anxiety.two" value="no"> No<br>
+    <br>
+    <p> Does trying new things make you feel unusually uncomfortable? </p>
+    <input type="radio" name="anxiety.three" value="yes"> Yes<br>
+    <input type="radio" name="anxiety.three" value="no"> No<br>
+    <br>
+    <p> Have you experienced periods of time that you are significantly more energized and eager to be productive? </p>
+    <input type="radio" name="bp.one" value="yes"> Yes<br>
+    <input type="radio" name="bp.one" value="no"> No<br>
+    <br>
+    <p> Have you experienced periods of time that you are significantly less energized and motivated to do anything? </p>
+    <input type="radio" name="bp.two" value="yes"> Yes<br>
+    <input type="radio" name="bp.two" value="no"> No<br>
+    <br>
+    <p> Have you experienced periods of time that you are noticeably more irritable and frustrated than usual? </p>
+    <input type="radio" name="bp.three" value="yes"> Yes<br>
+    <input type="radio" name="bp.three" value="no"> No<br>
+    <br>
+    <p> Do you ever feel like no one can understand you? </p>
+    <input type="radio" name="bp.four" value="yes"> Yes<br>
+    <input type="radio" name="bp.four" value="no"> No<br>
+    <br>
+    <p> Do you ever fixate on your body type and physical appearance? </p>
+    <input type="radio" name="bodydys.one" value="yes"> Yes<br>
+    <input type="radio" name="bodydys.one" value="no"> No<br>
+    <br>
+    <p> Do you focus on your physical flaws too often? </p>
+    <input type="radio" name="bodydys.two" value="yes"> Yes<br>
+    <input type="radio" name="bodydys.two" value="no"> No<br>
+    <br>
+    <p> Do you ever feel like you&#8217;re not good enough because you don&#8217;t like how you look? </p>
+    <input type="radio" name="bodydys.three" value="yes"> Yes<br>
+    <input type="radio" name="bodydys.three" value="no"> No<br>
+    <br>
+    <p> Do you frequently feel down or foggy? </p>
+    <input type="radio" name="depression.one" value="yes"> Yes<br>
+    <input type="radio" name="depression.one" value="no"> No<br>
+    <br>
+    <p> Do you frequently feel tired and lack energy, no matter how much sleep you get? </p>
+    <input type="radio" name="depression.two" value="yes"> Yes<br>
+    <input type="radio" name="depression.two" value="no"> No<br>
+    <br>
+    <p> Have you recently experienced a decline of interest in things that use to make you happy? </p>
+    <input type="radio" name="depression.three" value="yes"> Yes<br>
+    <input type="radio" name="depression.three" value="no"> No<br>
+    <br>
+    <p> Do you ever wish that you could avoid the present? </p>
+    <input type="radio" name="depression.four" value="yes"> Yes<br>
+    <input type="radio" name="depression.four" value="no"> No<br>
+    <br>
+    <p> Have you experienced significant weight loss recently? </p>
+    <input type="radio" name="eatdiso.one" value="yes"> Yes<br>
+    <input type="radio" name="eatdiso.one" value="no"> No<br>
+    <br>
+    <p> Have you ever intentionally avoided meals? </p>
+    <input type="radio" name="eatdiso.two" value="yes"> Yes<br>
+    <input type="radio" name="eatdiso.two" value="no"> No<br>
+    <br>
+    <p> Have you ever made yourself throw-up after eating more than you wish you had? </p>
+    <input type="radio" name="eatdiso.three" value="yes"> Yes<br>
+    <input type="radio" name="eatdiso.three" value="no"> No<br>
+    <br>
+    <p> Do you ever feel like your eating habits are out of your control? </p>
+    <input type="radio" name="eatdiso.four" value="yes"> Yes<br>
+    <input type="radio" name="eatdiso.four" value="no"> No<br>
+    <br>
+    <p> Do you ever feel stressed when your things are out of place? </p>
+    <input type="radio" name="ocd.one" value="yes"> Yes<br>
+    <input type="radio" name="ocd.one" value="no"> No<br>
+    <br>
+    <p> Do you ever feel like you have to do certain things for no reason? </p>
+    <input type="radio" name="ocd.two" value="yes"> Yes<br>
+    <input type="radio" name="ocd.two" value="no"> No<br>
+    <br>
+    <p> Do you have any small rituals or actions that you frequently repeat? </p>
+    <input type="radio" name="ocd.three" value="yes"> Yes<br>
+    <input type="radio" name="ocd.three" value="no"> No<br>
+    <br>
+    <p> Do you ever feel your heart pounding without knowing why? </p>
+    <input type="radio" name="panic.one" value="yes"> Yes<br>
+    <input type="radio" name="panic.one" value="no"> No<br>
+    <br>
+    <p> Do you ever feel so anxious that you aren&#8217;t able to move or think clearly? </p>
+    <input type="radio" name="panic.two" value="yes"> Yes<br>
+    <input type="radio" name="panic.two" value="no"> No<br>
+    <br>
+    <p> Do you ever feel like you can&#8217;t catch your breath without knowing why? </p>
+    <input type="radio" name="panic.three" value="yes"> Yes<br>
+    <input type="radio" name="panic.three" value="no"> No<br>
+    <br>
+    <p> Does a trigger ever cause you to feel so scared that you get dizzy and can&#8217;t catch your breath? </p>
+    <input type="radio" name="phobia.one" value="yes"> Yes<br>
+    <input type="radio" name="phobia.one" value="no"> No<br>
+    <br>
+    <p> Does a trigger ever cause you to feel so overwhelmed that your chest hurts or you get nauseous? </p>
+    <input type="radio" name="phobia.two" value="yes"> Yes<br>
+    <input type="radio" name="phobia.two" value="no"> No<br>
+    <br>
+    <p> Do people tell you that you have irrational fears? </p>
+    <input type="radio" name="phobia.three" value="yes"> Yes<br>
+    <input type="radio" name="phobia.three" value="no"> No<br>
+    <br>
+    <p> Do you often feel like something bad is about to happen? </p>
+    <input type="radio" name="schizo.one" value="yes"> Yes<br>
+    <input type="radio" name="schizo.one" value="no"> No<br>
+    <br>
+    <p> Do you often hear or see things that others don&#8217;t seem to notice? </p>
+    <input type="radio" name="schizo.two" value="yes"> Yes<br>
+    <input type="radio" name="schizo.two" value="no"> No<br>
+    <br>
+    <p> Do you often feel like you are being followed? </p>
+    <input type="radio" name="schizo.three" value="yes"> Yes<br>
+    <input type="radio" name="schizo.three" value="no"> No<br>
+    <br>
+    <p> Do you ever wish that you weren&#8217;t alive? </p>
+    <input type="radio" name="sui.one" value="yes"> Yes<br>
+    <input type="radio" name="sui.one" value="no"> No<br>
+    <br>
+    <p> Do you ever think about ending your life? </p>
+    <input type="radio" name="sui.two" value="yes"> Yes<br>
+    <input type="radio" name="sui.two" value="no"> No<br>
+    <br>
+    <p> Do you ever question why you exist? </p>
+    <input type="radio" name="sui.three" value="yes"> Yes<br>
+    <input type="radio" name="sui.three" value="no"> No<br>
+    <br>
+    <input type="button" id="submit" value="Click to Submit and See Results">
+        </div>
+    </div>
+    
+</section>
+
+<script>
+        const btn = document.querySelector('#submit');
+        // handle click button
+        btn.onclick = function () {
+            //start general
+            const rbs34 = document.querySelectorAll('input[name="general.one"]');
+            let selectedValue34;
+            for (const rb of rbs34) {
+                if (rb.checked) {
+                    selectedValue34 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue34);
+            if (selectedValue34 == "yes"){
+             upGeneral();
+            }
+
+            const rbs35 = document.querySelectorAll('input[name="general.two"]');
+            let selectedValue35;
+            for (const rb of rbs35) {
+                if (rb.checked) {
+                    selectedValue35 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue35);
+            if (selectedValue35 == "yes"){
+             upGeneral();
+            }
+
+            const rbs36 = document.querySelectorAll('input[name="general.three"]');
+            let selectedValue36;
+            for (const rb of rbs36) {
+                if (rb.checked) {
+                    selectedValue36 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue36);
+            if (selectedValue36 == "yes"){
+             upGeneral();
+            }
+
+            const rbs37 = document.querySelectorAll('input[name="general.four"]');
+            let selectedValue37;
+            for (const rb of rbs37) {
+                if (rb.checked) {
+                    selectedValue37 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue37);
+            if (selectedValue37 == "yes"){
+             upGeneral();
+            }
+
+            const rbs38 = document.querySelectorAll('input[name="general.five"]');
+            let selectedValue38;
+            for (const rb of rbs38) {
+                if (rb.checked) {
+                    selectedValue38 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue38);
+            if (selectedValue38 == "yes"){
+             upGeneral();
+            }
+            //end general
+
+            //start anxiety
+            const rbs = document.querySelectorAll('input[name="anxiety.one"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue);
+            if (selectedValue == "yes"){
+             upAnxiety();
+             }
+
+            const rbs2 = document.querySelectorAll('input[name="anxiety.two"]');
+            let selectedValue2;
+            for (const rb of rbs2) {
+                if (rb.checked) {
+                    selectedValue2 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue2);
+            if (selectedValue2 == "yes"){
+             upAnxiety();
+            }
+
+            const rbs3 = document.querySelectorAll('input[name="anxiety.three"]');
+            let selectedValue3;
+            for (const rb of rbs3) {
+                if (rb.checked) {
+                    selectedValue3 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue3);
+            if (selectedValue3 == "yes"){
+             upAnxiety();
+            }
+            //end anxiety
+
+            //start bp
+            const rbs4 = document.querySelectorAll('input[name="bp.one"]');
+            let selectedValue4;
+            for (const rb of rbs4) {
+                if (rb.checked) {
+                    selectedValue4 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue4);
+            if (selectedValue4 == "yes"){
+             upBp();
+            }
+
+            const rbs5 = document.querySelectorAll('input[name="bp.two"]');
+            let selectedValue5;
+            for (const rb of rbs5) {
+                if (rb.checked) {
+                    selectedValue5 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue5);
+            if (selectedValue5 == "yes"){
+             upBp();
+            }
+
+            const rbs6 = document.querySelectorAll('input[name="bp.three"]');
+            let selectedValue6;
+            for (const rb of rbs6) {
+                if (rb.checked) {
+                    selectedValue6 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue6);
+            if (selectedValue6 == "yes"){
+             upBp();
+            }
+
+            const rbs7 = document.querySelectorAll('input[name="bp.four"]');
+            let selectedValue7;
+            for (const rb of rbs7) {
+                if (rb.checked) {
+                    selectedValue7 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue7);
+            if (selectedValue7 == "yes"){
+             upBp();
+            }
+            //end bp
+
+            //start bodydys
+            const rbs8 = document.querySelectorAll('input[name="bodydys.one"]');
+            let selectedValue8;
+            for (const rb of rbs8) {
+                if (rb.checked) {
+                    selectedValue8 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue8);
+            if (selectedValue8 == "yes"){
+             upBodydys();
+            }
+
+            const rbs9 = document.querySelectorAll('input[name="bodydys.two"]');
+            let selectedValue9;
+            for (const rb of rbs9) {
+                if (rb.checked) {
+                    selectedValue9 = rb.value;
+                    break;
+                }
+            }
+
+            //alert(selectedValue9);
+            if (selectedValue9 == "yes"){
+             upBodydys();
+            }
+
+            const rbs10 = document.querySelectorAll('input[name="bodydys.three"]');
+            let selectedValue10;
+            for (const rb of rbs10) {
+                if (rb.checked) {
+                    selectedValue10 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue10);
+            if (selectedValue10 == "yes"){
+             upBodydys();
+            }
+            //end bodydys
+
+            //start depression
+            const rbs11 = document.querySelectorAll('input[name="depression.one"]');
+            let selectedValue11;
+            for (const rb of rbs11) {
+                if (rb.checked) {
+                    selectedValue11 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue11);
+            if (selectedValue11 == "yes"){
+             upDepression();
+            }
+
+            const rbs12 = document.querySelectorAll('input[name="depression.two"]');
+            let selectedValue12;
+            for (const rb of rbs12) {
+                if (rb.checked) {
+                    selectedValue12 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue12);
+            if (selectedValue12 == "yes"){
+             upDepression();
+            }
+
+            const rbs13 = document.querySelectorAll('input[name="depression.three"]');
+            let selectedValue13;
+            for (const rb of rbs13) {
+                if (rb.checked) {
+                    selectedValue13 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue13);
+            if (selectedValue13 == "yes"){
+             upDepression();
+            }
+
+            const rbs14 = document.querySelectorAll('input[name="depression.four"]');
+            let selectedValue14;
+            for (const rb of rbs14) {
+                if (rb.checked) {
+                    selectedValue14 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue14);
+            if (selectedValue14 == "yes"){
+             upDepression();
+            }
+            //end depression
+
+            //start eatdiso
+            const rbs15 = document.querySelectorAll('input[name="eatdiso.one"]');
+            let selectedValue15;
+            for (const rb of rbs15) {
+                if (rb.checked) {
+                    selectedValue15 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue15);
+            if (selectedValue15 == "yes"){
+             upEatdiso();
+            }
+
+            const rbs16 = document.querySelectorAll('input[name="eatdiso.two"]');
+            let selectedValue16;
+            for (const rb of rbs16) {
+                if (rb.checked) {
+                    selectedValue16 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue16);
+            if (selectedValue16 == "yes"){
+             upEatdiso();
+            }
+
+            const rbs17 = document.querySelectorAll('input[name="eatdiso.three"]');
+            let selectedValue17;
+            for (const rb of rbs17) {
+                if (rb.checked) {
+                    selectedValue17 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue17);
+            if (selectedValue17 == "yes"){
+             upEatdiso();
+            }
+
+            const rbs18 = document.querySelectorAll('input[name="eatdiso.four"]');
+            let selectedValue18;
+            for (const rb of rbs18) {
+                if (rb.checked) {
+                    selectedValue18 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue18);
+            if (selectedValue18 == "yes"){
+             upEatdiso();
+            }
+            //end eatdiso
+
+
+            //start ocd
+            const rbs19 = document.querySelectorAll('input[name="ocd.one"]');
+            let selectedValue19;
+            for (const rb of rbs19) {
+                if (rb.checked) {
+                    selectedValue19 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue19);
+            if (selectedValue19 == "yes"){
+             upOcd();
+            }
+
+            const rbs20 = document.querySelectorAll('input[name="ocd.two"]');
+            let selectedValue20;
+            for (const rb of rbs20) {
+                if (rb.checked) {
+                    selectedValue20 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue20);
+            if (selectedValue20 == "yes"){
+             upOcd();
+            }
+
+            const rbs21 = document.querySelectorAll('input[name="ocd.three"]');
+            let selectedValue21;
+            for (const rb of rbs21) {
+                if (rb.checked) {
+                    selectedValue21 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue21);
+            if (selectedValue21 == "yes"){
+             upOcd();
+            }
+            //end ocd
+
+            //start panic
+            const rbs22 = document.querySelectorAll('input[name="panic.one"]');
+            let selectedValue22;
+            for (const rb of rbs22) {
+                if (rb.checked) {
+                    selectedValue22 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue22);
+            if (selectedValue22 == "yes"){
+             upPanic();
+            }
+
+            const rbs23 = document.querySelectorAll('input[name="panic.two"]');
+            let selectedValue23;
+            for (const rb of rbs23) {
+                if (rb.checked) {
+                    selectedValue23 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue23);
+            if (selectedValue23 == "yes"){
+             upPanic();
+            }
+
+            const rbs24 = document.querySelectorAll('input[name="panic.three"]');
+            let selectedValue24;
+            for (const rb of rbs24) {
+                if (rb.checked) {
+                    selectedValue24 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue24);
+            if (selectedValue24 == "yes"){
+             upPanic();
+            }
+            //end panic
+
+            //start phobia
+            const rbs25 = document.querySelectorAll('input[name="phobia.one"]');
+            let selectedValue25;
+            for (const rb of rbs25) {
+                if (rb.checked) {
+                    selectedValue25 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue25);
+            if (selectedValue25 == "yes"){
+             upPhobia();
+            }
+
+            const rbs26 = document.querySelectorAll('input[name="phobia.two"]');
+            let selectedValue26;
+            for (const rb of rbs26) {
+                if (rb.checked) {
+                    selectedValue26 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue26);
+            if (selectedValue26 == "yes"){
+             upPhobia();
+            }
+
+            const rbs27 = document.querySelectorAll('input[name="phobia.three"]');
+            let selectedValue27;
+            for (const rb of rbs27) {
+                if (rb.checked) {
+                    selectedValue27 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue27);
+            if (selectedValue27 == "yes"){
+             upPhobia();
+            }
+            //end phobia
+
+            //start schizo
+            const rbs28 = document.querySelectorAll('input[name="schizo.one"]');
+            let selectedValue28;
+            for (const rb of rbs28) {
+                if (rb.checked) {
+                    selectedValue28 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue28);
+            if (selectedValue28 == "yes"){
+             upSchizo();
+            }
+
+            const rbs29 = document.querySelectorAll('input[name="schizo.two"]');
+            let selectedValue29;
+            for (const rb of rbs29) {
+                if (rb.checked) {
+                    selectedValue29 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue29);
+            if (selectedValue29 == "yes"){
+             upSchizo();
+            }
+
+            const rbs30 = document.querySelectorAll('input[name="schizo.three"]');
+            let selectedValue30;
+            for (const rb of rbs30) {
+                if (rb.checked) {
+                    selectedValue30 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue30);
+            if (selectedValue30 == "yes"){
+             upSchizo();
+            }
+            //end schizo
+
+            //start sui
+            const rbs31 = document.querySelectorAll('input[name="sui.one"]');
+            let selectedValue31;
+            for (const rb of rbs31) {
+                if (rb.checked) {
+                    selectedValue31 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue31);
+            if (selectedValue31 == "yes"){
+             upSui();
+            }
+
+            const rbs32 = document.querySelectorAll('input[name="sui.two"]');
+            let selectedValue32;
+            for (const rb of rbs32) {
+                if (rb.checked) {
+                    selectedValue32 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue32);
+            if (selectedValue32 == "yes"){
+             upSui();
+            }
+
+            const rbs33 = document.querySelectorAll('input[name="sui.three"]');
+            let selectedValue33;
+            for (const rb of rbs33) {
+                if (rb.checked) {
+                    selectedValue33 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue33);
+            if (selectedValue33 == "yes"){
+             upSui();
+            }
+            //end sui
+
+            if (general < 2){
+                if ((anxiety < 2) && (bp < 2) && (bodydys < 2) && (depression < 2)){
+                    if ((eatdiso < 2) && (ocd < 2) && (panic < 2) && (phobia < 2)){
+                        if ((schizo < 2) && (sui < 2)){
+                            document.getElementById("demo").innerHTML = "You seem healthy!";
+                        }
+                    }
+                }
+            } else {
+                if ((anxiety > 2) || (bp > 2) || (bodydys > 2) || (depression > 2) || (eatdiso > 2) ||
+                (ocd > 2) || (panic > 2) || (phobia > 2) ||(schizo > 2) || (sui > 2)){
+                    document.getElementById("demo").innerHTML = "Your results indicate you may be at risk of:";
+                } else{
+                    document.getElementById("demo").innerHTML = "You seem healthy!";
+                }
+            }
+
+        };
+    </script>
+
+<br>
+<br>
+<h2 id="demo" style="font-family:'Courier New'">Your results will be listed here.</h2>
+<h2 id="anxiety1"style="font-family:'Courier New'"></h2>
+<h2 id="bp1"style="font-family:'Courier New'"></h2>
+<h2 id="bodydys1"style="font-family:'Courier New'"></h2>
+<h2 id="depression1"style="font-family:'Courier New'"></h2>
+<h2 id="eatdiso1"style="font-family:'Courier New'"></h2>
+<h2 id="ocd1"style="font-family:'Courier New'"></h2>
+<h2 id="panic1"style="font-family:'Courier New'"></h2>
+<h2 id="phobia1"style="font-family:'Courier New'"></h2>
+<h2 id="schizo1"style="font-family:'Courier New'"></h2>
+<h2 id="sui1"style="font-family:'Courier New'"></h2>
+<h2 id="general1"style="font-family:'Courier New'"></h2>
+
+
+</body>
+</html>
